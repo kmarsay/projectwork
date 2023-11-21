@@ -1,5 +1,6 @@
 package hu.masterfield.steps;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -8,8 +9,8 @@ import io.cucumber.java.en.When;
 
 public class TescoSteps {
 
-    @Before
-    //Chrome ???
+    //@Before                Chrome nyit
+
 
 
     //BAckground-ként valami annotációval (main page open and accept cookies:GIVEN, AND) vagy maradjon így?
@@ -35,6 +36,13 @@ public class TescoSteps {
 
     @Then("it shows elements in {English}")
     public void itShowsElementsIn(String English) {
+    }
+
+    /*
+    @After
+    public void cleanup() {
+        WebDriverRunner.getWebDriver().quit();
+        */
     }
 
 }
