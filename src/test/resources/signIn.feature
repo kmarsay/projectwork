@@ -1,3 +1,4 @@
+@Testcase3
 
 Feature: Sign in
   As registered user
@@ -7,16 +8,21 @@ Feature: Sign in
   Rule: It is allowed to sign in and shopping basket and I see the basket
 
     Background:
-      Given open the main page
+      Given main page is open
       And accept cookies
 
+      @TC_Login
     Scenario: Sign in with existing user account
-      Given I am on the login page
-      When I login account with username and password
+
+      When I login with following user
+        | email                 |     password       |
+        | kovacs.vzas@gmail.com | tokmindegy         |
       Then I am on the groceries page
       And I should see the basket icon
 
     Scenario: Sign in with invalid password
-      Given I am on the login page
-      When I login with valid username and invalid password
-      Then I  see the error message on the login page
+
+      When I login with following user
+        | email                 |     password       |
+        | kovacs.vzas@gmail.com | PW123         |
+      Then I got an error message

@@ -6,7 +6,7 @@ Feature: Register
   Rule: It is allowed to register to the webshop
 
     Background:
-      Given open the main page
+      Given main page is open
       And accept cookies
 
     Scenario: Register a new user

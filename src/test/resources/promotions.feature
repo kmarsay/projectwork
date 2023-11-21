@@ -1,4 +1,6 @@
 
+@Testcase2
+
 Feature: Promotions
   As user
   I want to list the promotions
@@ -7,12 +9,12 @@ Feature: Promotions
   Rule: It is allowed to list the promotions
 
     Background:
-      Given open the main page
+      Given main page is open
       And accept cookies
 
     Scenario: Main page of the promotions can be opened
       Given user is not signed in
       When I see the groceries page
-      Then I clik on promotions
+      Then I click on promotions
       And get the offers listed by department
 

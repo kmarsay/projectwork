@@ -7,7 +7,7 @@ Feature: Checkout basket
   Rule: It is allowed to checkout the basket
 
     Background:
-      Given open the main page
+      Given main page is open
       And accept cookies
       And I am on the login page
       And I login account with username and password

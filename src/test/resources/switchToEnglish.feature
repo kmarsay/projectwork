@@ -1,6 +1,7 @@
 
+@Testcase1
 
-  Feature: Switch language to English
+Feature: Switch language to English
     As user I want to change the language from Hungarian to English
     So that I reach the webshop in English
 
@@ -8,7 +9,7 @@
     Rule: It is allowed to change the language
 
       Background:
-        Given open main page
+        Given main page is open
         And accept cookies
 
       Scenario: Change the language to english

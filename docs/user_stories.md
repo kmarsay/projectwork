@@ -1,43 +1,30 @@
-User Stories
+User Stories for
+Webpage: https://bevasarlas.tesco.hu/groceries/hu-HU
 
-1.
-As user I want to accept cookies
-So that I can register or login
+**1. Cookies handling**
+Description: As a normal user I can accept or decline cookies.
 
-
-2.
+**2. Webshop registration**
 I want to register as a new user to the webshop
-So that I can sign in
+Description: As a normal user I want to register to the site
 
-3.
-As registered user
-I sign in to the webshop
-So that I can reach my basket
+**3. Sign in to the webshop**
+Description: As registered user I want to log in with  mail adress and password
 
-4.
-As a user logged in to the webshop
-I sign out
-So that I can not reach my basket
+**4. Sign out from the webshop**
+Description: As registered user I want to log out from the webshop
 
-5.
-As user I want to change the language from Hungarian to English
-So that I reach the webshop in English
+**5. Change language**
+Description: As normal user I want to change the language from Hungarian to English
 
-6.
-As a registered user
-I want to add item into the basket
-So that the added item is stored in the basket
+**6. Add item to basket**
+Description: As a registered user I want to add new items to the basket.
 
-7.
-As registered user
-I want to remove item from the basket
+**7. Remove items from basket**
+Description: As a registered user I want to remove items from the basket.
 
-8.
-As user
-I want to list the promotions
-So that I can see the offers by department
+**8. Check promotions**
+Description: As normal user I want to see the promotions listed in categories
 
-9.
-As a registered user
-I have already items in my basket
-So that can show the content of the basket
+**9. Check content of basket**
+Description: As a registered user I want to see the chossen items in my basket
