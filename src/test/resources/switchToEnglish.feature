@@ -8,12 +8,12 @@ Feature: Switch language to English
 
     Rule: It is allowed to change the language
 
-      Background:
-        Given main page is open
-        And accept cookies
-
       Scenario: Change the language to english
-        Given language is set to "Magyar"
-        When I change the language to "English"
+        Given open "Magyar" home page
+        When I change the language
         Then it shows elements in "English"
 
+      Scenario: Change the language to english
+        Given open "English" home page
+        When I change the language
+        Then it shows elements in "Magyar"

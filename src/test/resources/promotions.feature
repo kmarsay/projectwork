@@ -1,4 +1,3 @@
-
 @Testcase2
 
 Feature: Promotions
@@ -13,8 +12,7 @@ Feature: Promotions
       And accept cookies
 
     Scenario: Main page of the promotions can be opened
-      Given user is not signed in
       When I see the groceries page
-      Then I click on promotions
-      And get the offers listed by department
+      Then I want to check promotions
+      And I can view offers by department
 
